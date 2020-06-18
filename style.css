@@ -1,0 +1,157 @@
+:root {
+  --btn-bg-color: rgba(7, 121, 228, 1);
+  --btn-bg-hover: rgba(7, 121, 228, 0.7);
+  --btn-text-color: rgba(244, 244, 244, 1);
+  --btn-text-hover: rgba(221, 221, 221, 1);
+  --input-bg-color: rgba(244, 244, 244, 1);
+  --close-btn-bg-color:rgba(244, 244, 244, 1);
+}
+
+.drop_container {
+  position: relative；;
+}
+
+#language_input {
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  width: 200px;
+  height: 30px;
+  background-color: var(--input-bg-color);
+  outline: none;
+}
+
+.option_btn {
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  height: 30px;
+  width: 33px;
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+  margin: 0;
+  margin-left: -4px;
+  outline: none;
+}
+
+.option_btn:hover {
+  background-color: var(--btn-bg-hover);
+  color: var(--btn-text-hover);
+}
+
+.drop_down_list {
+  position: absolute;
+  display: none;
+  box-sizing: border-box;
+  width: 200px;
+  border: none;
+  background-color: var(--input-bg-color);
+}
+
+.drop_down_list:hover {
+  cursor: pointer;
+}
+
+.language {
+  background-image: url("./img/af.png");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.language:hover {
+  background-color: var(--btn-bg-hover);
+}
+
+.alert_btn {
+  width: 130px;
+  height: 40px;
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+  font-weight: 500;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.alert_btn:hover {
+  transform: translateY(-2px);
+}
+
+.alert_btn:active {
+  transform: translateY(0px);
+  box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.pop_btn {
+    position: fixed;
+    top:30%;
+    left:50%;
+  width: 130px;
+  height: 40px;
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+  font-weight: 500;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.close_btn{
+    position: fixed;
+    top:16%;
+    left:54%;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: none;
+    padding: 0;
+    background-color: var(--close-btn-bg-color);
+    color:black;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+.pop_box{
+    position: fixed;
+    top:15%;
+    left:40%;
+    height: 200px;
+    width:400px;
+    border: solid 1px red;
+    animation: slidedown 1s;
+
+}
+
+@keyframes slidedown{
+
+  from {transform: translateY(-100px);}
+
+  to{transform: translateY(50px);}
+
+}
+
+
+.pop_up{
+display: none;
+position: fixed;
+width: 100%;
+height: 100%;
+top:0;
+left:0;
+background-color: rgba(0, 0, 0, 0.1);
+z-index: 20;
+}
+
+
+
+html.darkenPage {
+  background-color:rgba(0, 0, 0, 0.1);
+}
+
